@@ -160,7 +160,7 @@ function processContains(item,list, callback) {
  * should return 3.
 */
 function processDuplicateFree(list,callback) {
-  return callback();
+  return callback(list.filter((a, b) => list.indexOf(a) === b ));
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
